@@ -50,3 +50,5 @@ Route::get('/catalogo', function () {
 Route::get('/peliculas', 'MoviesController@index');
 
 Route::get('/actores', 'ActorsController@directory');
+Route::get('/actores/{actor}', 'ActorsController@show');
+Route::get('/actores/buscar', 'ActorsController@search');
